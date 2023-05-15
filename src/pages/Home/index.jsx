@@ -25,7 +25,19 @@ const Home = () => {
     return (
         <div className='container-home'>
             <h1>TO-DO LIST</h1>
-            
+            <button onClick={handleAddTodo}>Adicionar Tarefa</button>
+            <ul>
+                {todos.map(todo => (
+                    <li
+                        key={todo.id}
+                        style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}
+                        onClick={() => handleToggleTodo(todo.id)}
+                    >
+                        {todo.text}
+                        <button onClick={() => handleDeleteTodo(todo.id)}>Excluir</button>
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }
