@@ -1,8 +1,9 @@
 import './home.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { addTodo, deleteTodo, toggleTodo } from '../../store/todosSlice'
+import { deleteTodo, toggleTodo } from '../../store/todosSlice'
 
 import ButtonAdd from '../../components/buttonAdd'
+import Todos from '../../components/todos'
 
 const Home = () => {
 
@@ -29,7 +30,8 @@ const Home = () => {
             <h1>TO-DO LIST</h1>
             {/* <button onClick={handleAddTodo}>Adicionar Tarefa</button> */}
             <ButtonAdd />
-            <ul>
+            <Todos />
+            {/* <ul>
                 {todos.map(todo => (
                     <li
                         key={todo.id}
@@ -40,7 +42,7 @@ const Home = () => {
                         <button onClick={() => handleDeleteTodo(todo.id)}>Excluir</button>
                     </li>
                 ))}
-            </ul>
+            </ul> */}
         </div>
     )
 }
