@@ -1,0 +1,20 @@
+.DividerStyles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+    .DividerStyles{
+        gap: 16;
+    }
+  }
+
+.line{
+    width: calc(100% - 70%);
+    border: 1px solid gray;
+    background-color: gray;
+}

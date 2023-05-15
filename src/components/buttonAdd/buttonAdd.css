@@ -1,14 +1,19 @@
 .container-btn{
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .inputAddTodo{
-    padding: 10px;
+    padding: 15px;
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 5px;
+    width: 80%;
 }
 
 .btnAddTodo{
+    padding: 5px;
     display: flex;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, .3);
@@ -18,7 +23,7 @@
 }
 
 .btnAddTodo svg{
-    font-size: 24px;
+    font-size: 35px;
     color: rgba(0, 0, 0, .5);
 }
 
