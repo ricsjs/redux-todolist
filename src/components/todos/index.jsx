@@ -1,10 +1,19 @@
 import { useSelector, useDispatch } from 'react-redux'
+import { deleteTodo, toggleTodo } from '../../store/todosSlice'
 
 const Todos = () => {
 
 
     const todos = useSelector(state => state.todos);
     const dispatch = useDispatch();
+
+    const handleDeleteTodo = id => {
+        dispatch(deleteTodo(id));
+    };
+
+    const handleToggleTodo = id => {
+        dispatch(toggleTodo(id));
+    };
 
 
     return (
