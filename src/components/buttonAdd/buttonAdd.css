@@ -1,0 +1,27 @@
+.container-btn{
+    display: flex;
+}
+
+.inputAddTodo{
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 5px;
+}
+
+.btnAddTodo{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btnAddTodo svg{
+    font-size: 24px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.btnAddTodo:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
