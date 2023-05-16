@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { addTodo } from '../../store/todosSlice'
 
 import { useState } from 'react'
@@ -10,7 +10,6 @@ const ButtonAdd = () => {
 
     const [inputValue, setInputValue] = useState();
 
-    const todos = useSelector(state => state.todos);
     const dispatch = useDispatch();
 
     const handleAddTodo = () => {
@@ -18,6 +17,8 @@ const ButtonAdd = () => {
             console.log(inputValue)
             dispatch(addTodo(inputValue));
             setInputValue('');
+        }else{
+            alert("Você precisa digitar algo!")
         }
     }
 
