@@ -8,7 +8,10 @@
 .container-home h1{
     font-weight: 900;
     font-style: italic;
-    font-size: 50px;
+    font-size: 65px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Vollkorn', serif;
 }
 
 .todos-home{
