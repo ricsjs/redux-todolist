@@ -1,4 +1,12 @@
-.icon{
+.icon {
     cursor: pointer;
     font-size: 22px;
+}
+
+body {
+    transition: background-color 0.3s ease;
+}
+
+.app {
+    transition: filter 0.3s ease;
 }
