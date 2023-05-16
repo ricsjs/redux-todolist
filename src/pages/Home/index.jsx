@@ -11,7 +11,9 @@ const Home = () => {
             <h1>TO-DO LIST</h1>
             <Divider />
             <ButtonAdd />
-            <Todos />
+            <div className='todos-home'>
+                <Todos />
+            </div>
         </div>
     )
 }

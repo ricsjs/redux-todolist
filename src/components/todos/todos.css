@@ -1,0 +1,16 @@
+.todos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: .5em;
+}
+
+svg{
+    cursor: pointer;
+}
+
+svg:hover{
+    color: rgba(0, 0, 0, .9);
+}
